@@ -32,7 +32,6 @@ if __name__ == "__main__":
     from readhzk16 import get_str_pointmap
     import sys
     string = sys.argv[1] if len(sys.argv) > 1 else "新年快乐哈哈哈"
-    print (string)
     mat = get_str_pointmap(string)
     with open("output.sp", "w") as f:
         f.write(printmatrix(mat, 20))
